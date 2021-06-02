@@ -2,7 +2,7 @@ def potencia (a, b):
   pass
 
 def divisao (a, b):
-  pass
+  return a/b
 
 def multiplicacao (a, b):
   return a*b
@@ -24,7 +24,7 @@ elif operacao == '-':
 elif operacao == '*':
   resultado = multiplicacao(a, b)
 elif operacao == '/':
-  resultado = a // b
+  resultado = divisao(a, b)
 else:
   resultado = a ** b
 print (resultado)
