@@ -5,10 +5,10 @@ def divisao (a, b):
   pass
 
 def multiplicacao (a, b):
-  pass
+  return a*b
 
 def subtracao (a, b):
-  pass
+  return a - b
 
 def soma (a, b):
   return a + b
@@ -20,9 +20,9 @@ operacao = input("+: Soma\n-: Subtração\n*: Multiplicação\n/: Divisão\n**: 
 if operacao == '+':
   resultado = soma(a, b)
 elif operacao == '-':
-  resultado = a - b
+  resultado = subtracao(a,b)
 elif operacao == '*':
-  resultado = a * b
+  resultado = multiplicacao(a, b)
 elif operacao == '/':
   resultado = a // b
 else:
