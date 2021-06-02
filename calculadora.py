@@ -1,5 +1,5 @@
 def potencia (a, b):
-  pass
+  return a**b
 
 def divisao (a, b):
   return a/b
@@ -20,11 +20,11 @@ operacao = input("+: Soma\n-: Subtração\n*: Multiplicação\n/: Divisão\n**: 
 if operacao == '+':
   resultado = soma(a, b)
 elif operacao == '-':
-  resultado = subtracao(a,b)
+  resultado = subtracao(a, b)
 elif operacao == '*':
   resultado = multiplicacao(a, b)
 elif operacao == '/':
   resultado = divisao(a, b)
 else:
-  resultado = a ** b
+  resultado = potencia(a, b)
 print (resultado)
